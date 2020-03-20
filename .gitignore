@@ -1,1 +1,5 @@
 .env
+.vscode
+.idea
+bin/webhook
+bin/init.sh
