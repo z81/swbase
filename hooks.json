@@ -1,0 +1,20 @@
+[{
+  "id": "deploy",
+  "execute-command": "./bin/deploy.py",
+  "response-message": "Exec",
+  "pass-arguments-to-command": [{
+    "source": "url",
+    "name": "repName"
+  }],
+  "trigger-rule": {
+    "match": {
+      "type": "value",
+      "value": "42",
+      "parameter": {
+        "source": "header",
+        "name": "Token"
+      }
+    }
+  },
+  "include-command-output-in-response": true
+}]
