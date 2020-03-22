@@ -78,13 +78,13 @@ Description=Small server for creating HTTP endpoints (hooks)
 Documentation=https://github.com/adnanh/webhook/
 
 [Service]
-ExecStart="%s -nopanic -hotreload -hooks %s/hooks.json"
+ExecStart=webhook -nopanic -hotreload -hooks %s/hooks.json
 WorkingDirectory=%s
 User=root
 Group=root
 
 [Install]
-WantedBy = multi - user.target """ % (webhookPath, BASE_PATH, BASE_PATH)
+WantedBy = multi - user.target """ % (BASE_PATH, BASE_PATH)
 
 serviceFile = "/etc/systemd/system/webhook.service"
 
