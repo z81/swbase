@@ -78,7 +78,7 @@ Description=Small server for creating HTTP endpoints (hooks)
 Documentation=https://github.com/adnanh/webhook/
 
 [Service]
-ExecStart=%s -nopanic -hotreload -hooks %s/hooks.json"
+ExecStart="%s -nopanic -hotreload -hooks %s/hooks.json"
 WorkingDirectory=%s
 User=root
 Group=root
