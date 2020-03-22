@@ -9,7 +9,7 @@
   "trigger-rule": {
     "match": {
       "type": "value",
-      "value": "42",
+      "value": "123",
       "parameter": {
         "source": "header",
         "name": "Token"

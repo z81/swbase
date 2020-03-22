@@ -3,3 +3,4 @@
 .idea
 bin/webhook
 bin/init.sh
+hooks.json
